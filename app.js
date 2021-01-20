@@ -48,7 +48,7 @@ const appendToFile = async() => {
     try {
         console.log('Appending to file...');
         fs.appendFileSync(filePath,
-            'Info Time: ' + new Date().toISOString() + os.EOL +
+            'Info Time: ' + new Date() + os.EOL +
             'Total Memory: ' + totalMemory + os.EOL +
             'Free Memory: ' + freeMemory + os.EOL +
             'Platform: ' + osPlatform + os.EOL +

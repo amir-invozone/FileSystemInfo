@@ -1,0 +1,23 @@
+{
+  "name": "osfstask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amir-invozone/FileSystemInfo.git"
+  },
+  "author": "Amir Hussain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amir-invozone/FileSystemInfo/issues"
+  },
+  "homepage": "https://github.com/amir-invozone/FileSystemInfo#readme"
+}
