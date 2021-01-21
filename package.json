@@ -11,16 +11,17 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
     "prettier": "2.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "lint": "eslint app.js"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "prettier --write . && git add -A ."
+      "pre-commit": "lint-staged"
     }
   },
   "repository": {
@@ -32,5 +33,12 @@
   "bugs": {
     "url": "https://github.com/amir-invozone/FileSystemInfo/issues"
   },
-  "homepage": "https://github.com/amir-invozone/FileSystemInfo#readme"
+  "homepage": "https://github.com/amir-invozone/FileSystemInfo#readme",
+  "lint-staged": {
+    "*.js": [
+      "npm run format",
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }
